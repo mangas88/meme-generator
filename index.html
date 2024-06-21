@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memizzatore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="memizzatore.js" defer></script>
+</head>
+<body background="img-meme/test.jpg">
+    <header>
+        <h1>Meme Generator</h1>
+    </header>
+    <main>
+        <section>
+            <div id="img-selection">
+                <h2>1)selezione immagine</h2>
+                <button>
+                    <img src="img-meme/meme-1.jpeg" alt="">
+                </button>
+                <button>
+                    <img src="img-meme/meme-2.jpg" alt="">
+                </button>
+                <button>
+                    <img src="img-meme/meme-3.jpg" alt="">
+                </button>
+                <button>
+                    <img src="img-meme/meme-4.jpg" alt="">
+                </button>
+                <p>Oppure scegli una foto</p>
+                <input type='file' id="file-upload">
+                <button id="next" disabled>Prosegui</button>
+            </div>
+            <div id="insert-text">
+                <h2>2)Inserisci il testo</h2>
+                <span>scritta Superiore</span><br>
+                <input type="text" id="top-line" ><br>
+                <span>scritta Inferiore</span><br>
+                <input type="text" id="bottom-line"><br>
+                <button id="back">Indietro</button>
+                <a download="meme.jpeg" id="download">download</a>
+            </div>
+        </section>
+        <canvas id="canvas" width="500" height="500">
+
+        </canvas>
+    </main>
+</body>
+</html>
